@@ -17,6 +17,7 @@ interface ProductCard {
 
 const ProductCard: React.FC<ProductCard> = ({ data }) => {
   const previewModal = usePreviewModal()
+
   const cart = useCart()
   const router = useRouter()
 
@@ -24,13 +25,13 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
     router.push(`/product/${data?.id}`)
   }
 
-  const onPreview: MouseEventHandler<HTMLButtonElement> = event => {
+  const onPreview = (event: MouseEvent) => {
     event.stopPropagation()
 
     previewModal.onOpen(data)
   }
 
-  const onAddToCart: MouseEventHandler<HTMLButtonElement> = event => {
+  const onAddToCart = (event: MouseEvent) => {
     event.stopPropagation()
 
     cart.addItem(data)
