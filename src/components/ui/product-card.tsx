@@ -25,13 +25,13 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
     router.push(`/product/${data?.id}`)
   }
 
-  const onPreview = (event: MouseEvent) => {
+  const onPreview: MouseEventHandler<HTMLButtonElement> = event => {
     event.stopPropagation()
 
     previewModal.onOpen(data)
   }
 
-  const onAddToCart = (event: MouseEvent) => {
+  const onAddToCart: MouseEventHandler<HTMLButtonElement> = event => {
     event.stopPropagation()
 
     cart.addItem(data)

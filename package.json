@@ -10,15 +10,17 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "axios": "^1.6.0",
     "clsx": "^2.0.0",
     "lucide-react": "^0.291.0",
-    "next": "^14.0.1",
+    "next": "^13.4.10",
     "query-string": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.47.0",
     "react-hot-toast": "^2.4.1",
     "tailwind-merge": "^2.0.0",
-    "zustand": "^4.4.5"
+    "zustand": "^4.3.9"
   },
   "devDependencies": {
     "@types/node": "^20",
