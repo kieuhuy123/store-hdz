@@ -31,6 +31,7 @@ const CartPage = () => {
       `${process.env.NEXT_PUBLIC_API_URL}/checkout`,
       {
         productIds: items.map(item => item.id),
+        name: data.name,
         phone: data.phone,
         address: data.address
       }

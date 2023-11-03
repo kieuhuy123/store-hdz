@@ -32,7 +32,7 @@ const FromUser = ({
           <input
             {...register('name', { required: true })}
             className='appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
-            placeholder='Type phon'
+            placeholder='Type name'
           ></input>
           {errors.name?.type === 'required' && (
             <span className='text-red-500 text-sm' role='alert'>
