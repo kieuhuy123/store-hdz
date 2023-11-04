@@ -2,7 +2,7 @@
 #### Video Demo:  <URL HERE>
 #### Description:
 This project is an Admin Panel built using Next.js, Tailwind CSS, Prisma, MySQL, and NextAuth. The admin panel is designed to manage various aspects of a web application, with seamless navigation and user experience.
-## MAKE SURE YOU HAVE ADMIN SETUP FIRST!
+## MAKE SURE YOU HAVE Admin SETUP FIRST!
 #### Key Features:
 - Shadcn UI for Admin
 - The admin dashboard serves as a Content Management System (CMS), admin panel, and API hub.
