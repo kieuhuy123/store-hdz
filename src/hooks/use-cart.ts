@@ -12,7 +12,7 @@ interface CartStore {
   removeAll: () => void
 }
 
-const useCart = create<CartStore>(
+const useCart = create<CartStore>()(
   persist(
     (set, get) => ({
       items: [],
