@@ -1,37 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Title: Store Ecommerce
+#### Video Demo:  <URL HERE>
+#### Description:
+This project is an Admin Panel built using Next.js, Tailwind CSS, Prisma, MySQL, and NextAuth. The admin panel is designed to manage various aspects of a web application, with seamless navigation and user experience.
+## MAKE SURE YOU HAVE ADMIN SETUP FIRST!
+#### Key Features:
+- Shadcn UI for Admin
+- The admin dashboard serves as a Content Management System (CMS), admin panel, and API hub.
+- Manage multiple vendors or stores through a single CMS, allowing control over various categories and products. (For example you can have a "Shoe store" and a "Laptop store" and a "Suit store", and our CMS will generate API routes for all of those individually!)
+- Create, update, and delete product categories for effective organization.
+- Create, update, and delete products with ease, along with support for multiple product images.
+- Create, update, and delete filters like "Color" and "Size" for products, and associate them during product creation.
+- Create, update, and delete "Billboards," large text sections that can be attached to a single category or used independently. The admin generates API routes for all scenarios.
+- Search through all categories, products, sizes, colors, and billboards with pagination for efficient content discovery.
+- Control which products are "featured" and displayed on the homepage for increased visibility.
+- Monitor and manage orders, sales, and revenue through the admin dashboard.
+- View graphs and charts representing revenue and other key data.
+- Implement Clerk Authentication for enhanced security and user management.
+- Efficiently create and manage orders.
+- Utilizes MySQL, Prisma, and PlanetScale for robust database management and scalability.
+### Prerequisites
 
-## Getting Started
+**Node version 18.x**
 
-First, run the development server:
+### Cloning the repository
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```shell
+git clone https://github.com/kieuhuy123/store-hdz.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm i
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Setup .env file
 
-## Learn More
+```js
+NEXT_PUBLIC_API_URL=
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Connect to PlanetScale and Push Prisma
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```shell
+npx prisma generate
+npx prisma db push
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Start the app
 
-## Deploy on Vercel
+```shell
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Available commands
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# store-hdz" 
+Running commands with npm `npm run [command]`
+
+| command | description                              |
+| :------ | :--------------------------------------- |
+| `dev`   | Starts a development instance of the app |
