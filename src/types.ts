@@ -18,6 +18,7 @@ export interface Billboard {
   id: string
   label: string
   imageUrl: string
+  onHomepage: boolean
 }
 
 export interface Category {

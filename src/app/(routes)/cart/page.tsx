@@ -25,8 +25,6 @@ const CartPage = () => {
   }
 
   const onCheckout = async (data: any) => {
-    console.log('click')
-    console.log(data)
     const response = await axios.post(
       `${process.env.NEXT_PUBLIC_API_URL}/checkout`,
       {
