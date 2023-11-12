@@ -30,8 +30,8 @@ const HomeBanner: React.FC<BillboardProps> = ({ data }) => {
           dynamicBullets: true
         }}
       >
-        {data.map(item => (
-          <SwiperSlide key={item.id} virtualIndex={item} className=''>
+        {data.map((item, index) => (
+          <SwiperSlide key={item.id} virtualIndex={index} className=''>
             <figure className=' aspect-square md:aspect-[2.4/1] relative'>
               <Image
                 src={item.imageUrl}
